@@ -1,33 +1,34 @@
 var questions = [
     {
-        prompt: "Question 1",
-        options: ["a", "b", "c", "d", "e"],
-        answer: "a"
+        prompt: "Question 1: What does the DOM stand for in JavaScript?",
+        options: ["Document Object Model", "Data Output Mechanism", "Document Order Model", "Dynamic Object Manipulation"],
+        answer: "Document Object Model"
     },
 
     {
-        prompt: "Question 2",
-        options: ["a", "b", "c", "d", "e"],
-        answer: "b"
+        prompt: "Question 2: How do you declare a variable in JavaScript?",
+        options: ["var myVariable;", "let myVariable;", "const myVariable;", "All of the above"],
+        answer: "All of the above"
     },
 
     {
-        prompt: "Question 3",
-        options: ["a", "b", "c", "d", "e"],
-        answer: "c"
+        prompt: "Question 3: Which of the following is used to comment a single line in JavaScript?",
+        options: ["// Comment", "/* Comment */", "# Comment", "-- Comment --"],
+        answer: "// Comment"
     },
 
     {
-        prompt: "Question 4",
-        options: ["a", "b", "c", "d", "e"],
-        answer: "d" 
+        prompt: "Question 4: What is the purpose of the alert() function in JavaScript?",
+        options: ["Display an alert box with a message", "Print a message to the console", "Create a pop-up window", "Define a variable"],
+        answer: "Display an alert box with a message" 
     },
 
     {
-        prompt: "Question 5",
-        options: ["a", "b", "c", "d", "e"],
-        answer: "e"
-    }];
+        prompt: "Question 5: How do you write an if statement in JavaScript?",
+        options: ["if (condition) { // code }", "if {condition} then { // code }", "condition { // code } i", "{ // code } if (condition)"],
+        answer: "if (condition) { // code }"
+    },
+        ];
 
 var questionsEl = document.querySelector("#questions");
 var timerEl = document.querySelector("#timer");
