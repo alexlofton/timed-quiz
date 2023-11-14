@@ -108,5 +108,29 @@ function clockTick() {
     }
 }
 
+function saveHighscore() {
+    var name = nameEl.value.trim();
+    if (name !== "") {
+    var highscores =
+        JSON.parse(window.localStorage.getItem("highscores")) || [];
+    var newScore = {
+        score: time,
+        name: name
+    };
+    highscores.push(newScore);
+    window.localStorage.setItem("highscores", JSON.stringify(highscores));
+    }
+}
+
+function checkForEnter(event) {
+    if (event.key === "Enter") {
+        saveHighscore();
+    }
+}
 
 startBtn.onclick = quizStart;
+
+submitBtn.onclick = saveHighscore;
+
+nameEl.onkeyup = checkForEnter;
+
